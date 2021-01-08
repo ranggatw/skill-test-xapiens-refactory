@@ -1,0 +1,8 @@
+Essai :
+
+1. Bahasa yang saya gunakan adalah Bahasa JavaScript. Saya menggunakan node js (javascript runtime environment) untuk menjalankan codingan saya namun soal nomor 4 menggunakan campuran html karena harus ada input langsung dari user. Bahasa pemrograman Javascript termasuk dalam bahaya yang menganut functional programming bukan object oriented programming namun sekarang javascript juga sudah memperbarui fiturnya sehingga sekarang dapat menerapkan paradigma dari OOP dimulai dari ES6 / EcmaScript 6 / ES2015.
+
+2. Aturan pada javascript :
+  * Javascript harus konsisten dalam penulisan variable karena bersifat Case Sensitif.
+  * Di javascript bisa menggunakan dua jenis comment, dengan // atau /* .... */
+  * Di dalam javascript penggunaan titik koma (;) pada akhiran baris adalah opsional bisa digunakan bisa tidak namun jika kita menganut penulisan yang semantik biasanya akan di pakai;

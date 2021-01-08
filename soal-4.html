@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soal 4 | Tebak Angka</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      div {
+        margin: 0 auto;
+        text-align: center;
+        width: 100vh;
+      }
+      h1 {
+        font-size: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <h1>Tebak Angka</h1>
+      <button onclick="play()">Play</button>
+    </div>
+
+    <script>
+      const min = 1,
+        max = 100,
+        previousGuesses = [];
+
+      let secretNum = null,
+        guessNum = null;
+
+      const play = function() {
+        secretNum = Math.floor(Math.random() * (max - min + 1));
+        while (guessNumber() != secretNum) {
+          if (guessNum != 0) {
+            render();
+          }
+        }
+        alert("Selamat, tebakan kamu benar " + previousGuesses);
+      };
+
+      const guessNumber = function() {
+        guessNum = prompt("Masukkan angka antara " + min + " dan " + max);
+        return guessNum;
+      };
+
+      const render = function() {
+        previousGuesses.push(guessNum);
+        if (guessNum > secretNum) {
+          alert("Tebakan Terlalu Tinggi");
+        } else {
+          alert("Tebakan Terlalu Rendah");
+        }
+      };
+    </script>
+  </body>
+</html>
